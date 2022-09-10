@@ -246,7 +246,10 @@ li.slick-active button {
 }
 .cacdanhgia{
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
+    margin-left: 1em;
 }
 .cacdanhgia div{
     margin-right: 1em;

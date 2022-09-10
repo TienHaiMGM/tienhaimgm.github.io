@@ -446,7 +446,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .cacdanhgia{
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
+    margin-left: 1em;
 }
 .cacdanhgia div{
     margin-right: 1em;
@@ -739,9 +742,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     /*CAC DANH GIA*/
-    .cacdanhgia div{
-        margin-left: 1em;
-    }
     .cacdanhgia img{
         width: 25vw;
         height: 25vw;
@@ -943,9 +943,6 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: red;
     }
     /*CAC DANH GIA*/
-    .cacdanhgia div{
-        margin-left: 1em;
-    }
     .cacdanhgia img{
         width: 25vw;
         height: 25vw;
