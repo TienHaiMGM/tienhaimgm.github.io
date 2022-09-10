@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+   
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/Ky-Nang-Lang-Nghe-Trong-Giao-Tiep.jpg" alt="Ky-Nang-Lang-Nghe-Trong-Giao-Tiep" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/Ky-Nang-Lang-Nghe-Trong-Giao-Tiep 1.jpg" alt="Ky-Nang-Lang-Nghe-Trong-Giao-Tiep">
+                </div>
+                <div>
+                    <img src="../image/Ky-Nang-Lang-Nghe-Trong-Giao-Tiep 2.jpg" alt="Ky-Nang-Lang-Nghe-Trong-Giao-Tiep">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>Kỹ Năng Lắng Nghe Trong Giao Tiếp
+                </h2>
+                <p><del>$80,000.00 0</del> 
+                <strong> $47,000.00</strong></p>
+                <p>Nhà cung cấp: Hiraki Noriko</p>
+                <p>Kỹ năng, Kỹ năng sống</p>
+                <p>Nhà xuất bản: NXB Lao Động Xã Hội
+                </p>
+                <p>Định dạng: Epub</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Những người không biết cách lắng nghe, không nắm bắt được chủ đề đối phương đang nói, tuy không phải là người xấu nhưng cũng sẽ gặp rất nhiều khó khăn trong giao tiếp. Nói một cách cực đoan thì họ sẽ không tạo dựng được mối quan hệ với mọi người trong gia đình, bạn bè hay đồng nghiệp, thậm chí những việc đơn giản như là mua đồ tại cửa hàng cũng trở nên khó khăn với họ. Hơn thế nữa, những người như vậy cũng khó có thể hy vọng rằng mình sẽ có một mối quan hệ thân thiết hay sự đồng cảm sâu sắc với người khác.
+            </p>
+            <p>Vì vậy trong cuốn sách này, tác giả cuốn sách sẽ bàn về cách thức thể hiện bản thân khi đứng trên lập trường là người “lắng nghe”, là bên “tiếp nhận thông tin” để qua đó tiến hành một cuộc trò chuyện vui vẻ và hiệu quả, góp phần xây dựng mối quan hệ tốt đẹp với những người xung quanh.
+            </p>
+            <p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc phương thức, địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, …
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/Can-Bang-Cam-Xuc-Ca-Luc-Bao-Giong.jpg" alt="Can-Bang-Cam-Xuc-Ca-Luc-Bao-Giong" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/Can-Bang-Cam-Xuc-Ca-Luc-Bao-Giong 1.jpg" alt="Can-Bang-Cam-Xuc-Ca-Luc-Bao-Giong">
+                </div>
+                <div>
+                    <img src="../image/Can-Bang-Cam-Xuc-Ca-Luc-Bao-Giong 2.jpg" alt="Can-Bang-Cam-Xuc-Ca-Luc-Bao-Giong">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>Cân Bằng Cảm Xúc, Cả Lúc Bão Giông
+                </h2>
+                <p><del>$96,000.00 </del> 
+                <strong> $66,240.00</strong></p>
+                <p>Tác giả: Richard Nicholls</p>
+                <p>Nhà xuất bản: NXB Thế Giới
+                </p>
+                <p>Công ty phát hành: Skybooks</p>
+                <p>Thể loại: Sách kỹ năng</p>
+                <p>Năm xuất bản: 04-2019</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Một ngày, chúng ta có khoảng 16 tiếng tiếp xúc với con người, công việc, các nguồn thông tin từ mạng xã hội, loa đài báo giấy… Việc này mang đến cho bạn vô vàn cảm xúc, cả tiêu cực lẫn tích cực.
+            </p>
+            <p>Đa số những cảm xúc tiêu cực chỉ thỏa mãn được chúng ta ở thời điểm hiện tại. Tức là chúng ta có thể sẽ nhận được sự thoải mái khi la hét, cáu giận, chửi thề một ai đó nhưng những âm thanh ta phát ra, suy nghĩ ta truyền đi sẽ đóng vai một con dao sắc lẹm đâm ngược lại vào chính thân thể mình. Các mối quan hệ, cuộc sống, công việc của chúng ta sẽ dần rơi vào sự mệt mỏi, bế tắc.
+            </p>
+            <p>Học được cách cân bằng cảm xúc cũng chính là học được cách làm chủ cuộc đời mình thông minh, sáng suốt và đúng hướng.
+            </p>
+            <p>Cuốn sách này không chỉ là lý thuyết còn cho bạn những kĩ năng, phướng pháp tận tình nhất để giúp bạn làm chủ cảm xúc của mình.
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

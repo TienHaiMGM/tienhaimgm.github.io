@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+</head>
+<body>
+    <header class="header">
+        <nav id="navbar">
+            <a href="../BookStore/bookstore.html">
+                <img src="../image/logo-SinhVienTriThuc.png" id="logo" alt="logoSinhVienTriThuc">
+            </a>
+            <h1><a href="../BookStore/bookstore.html">TRANG CHỦ</a></h1>
+            <div class="dropdown">
+                <h1><a href="#">DANH MỤC SÁCH</a></h1>
+                <div class="dropdown-content">
+                  <a href="../Danh_muc_sach/self-help.html">Sách Self-Help</a>
+                  <a href="../Danh_muc_sach/thoigian.html">Sách quản lý thời gian</a>
+                  <a href="../Danh_muc_sach/phuongphap.html">Sách phương pháp học tập thông minh</a>
+                  <a href="../Danh_muc_sach/giaotiep.html">Sách kỹ năng giao tiếp</a>
+                </div>
+              </div>
+            <h1><a href="/Blog/Blog.html">BLOG</a></h1>
+            <div class="giohang"> 
+                <p>GIỎ HANG /</p>
+                <span id="tienGioHang">$0.00</span>
+                <button type="button" class="cartButton"><ion-icon name="bag-outline"></ion-icon>
+                  <span id="soLuongGioHang">0</span>
+                  </button>
+            </div>
+            <div class="mobile-nav-button">
+                <button type="button"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+        </nav>
+        <nav class="mobile-menu">
+            <div>
+                <ul>
+                    <li><a href="../BookStore/bookstore.html">Trang chủ</a></li>
+                    <li>
+                    <div class="dropdown">
+                        <a href="#">Danh mục sách</a>
+                        <div class="dropdown-content">
+                          <a href="../Danh_muc_sach/self-help.html">Sách Self-Help</a>
+                          <a href="../Danh_muc_sach/thoigian.html">Sách quản lý thời gian</a>
+                          <a href="../Danh_muc_sach/phuongphap.html">Sách phương pháp học tập thông minh</a>
+                          <a href="../Danh_muc_sach/giaotiep.html">Sách kỹ năng giao tiếp</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="../Blog/Blog.html">Blog</a></li>
+                    <li class="shop-mobile"><a href="../Shop/shop.html">Shop</a></li>	
+                    <li class="cart-mobile-device">
+                        <div class="giohang"> 
+                            <p>Giỏ hàng</p>
+                            <span id="tienGioHang-mobile">$0.00</span>
+                            <button type="button" class="cartButton"><ion-icon name="bag-outline"></ion-icon>
+                              <span id="soLuongGioHang-mobile">0</span>
+                              </button>
+                        </div>
+                    </li>			
+                  </ul>
+            </div>
+            <div class="mobile-button-close">
+                <button type="button"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+          </nav>
+          <nav class="tablet-menu">
+            <a href="../BookStore/bookstore.html" id="logo-a">
+                <img src="../image/logo-SinhVienTriThuc.png" id="logo" alt="logoSinhVienTriThuc">
+            </a>
+            <h1><a href="../BookStore/bookstore.html">TRANG CHỦ</a></h1>
+            <div class="dropdown">
+                <h1><a href="#">DANH MỤC SÁCH</a></h1>
+                <div class="dropdown-content">
+                  <a href="../Danh_muc_sach/self-help.html">Sách Self-Help</a>
+                  <a href="../Danh_muc_sach/thoigian.html">Sách quản lý thời gian</a>
+                  <a href="../Danh_muc_sach/phuongphap.html">Sách phương pháp học tập thông minh</a>
+                  <a href="../Danh_muc_sach/giaotiep.html">Sách kỹ năng giao tiếp</a>
+                </div>
+              </div>
+            <h1><a href="/Blog/Blog.html">BLOG</a></h1>
+            <h1 class="shop-tablet"><a href="../Shop/shop.html">SHOP</a></h1>
+            <div class="cart-tablet-device">
+                <div class="giohang"> 
+                    <button type="button" class="cartButton"><ion-icon name="bag-outline"></ion-icon>
+                    <span id="soLuongGioHang-tablet">0</span>
+                    </button>
+                </div>
+            </div>
+          </nav>
+          <div class="modal-cart">
+            <div class="shoppingcart modal-product">
+              <div class="cacsanpham">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                SẢN PHẨM
+                            </th>
+                            <th>
+                                GIÁ
+                            </th>
+                            <th>
+                                SỐ LƯỢNG
+                            </th>
+                            <th>
+                                TẠM TÍNH
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+              </div>
+                <div class="tonggia">
+                    <h4>
+                        CỘNG GIỎ HÀNG
+                    </h4>
+                    <div class="flex-style" id="tongTamTinh">
+                        <p>Tạm tính</p>
+                        <strong>$0.00</strong>
+                    </div>
+                    <div class="flex-style">
+                        <p>Giao hàng	
+                        </p>
+                        <span>Giao hàng miễn phí</span>
+                    </div>
+                    <div class="flex-style" id="tongTien">
+                        <p>Tổng</p>
+                        <strong>$0.00</strong>
+                    </div>
+                    <button class="clear-style"><a href="">TIẾN HÀNH THANH TOÁN</a></button>
+                </div>
+            </div>
+        </div>
+   </header>
+</body>
+</html>

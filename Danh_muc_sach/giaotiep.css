@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color:#777;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+strong {
+    color: black;
+}
+
+hr{
+    height:1.5px;
+    border-width:0;
+    color: rgb(224, 224, 224);
+    background-color:currentColor;
+}
+
+.mid-container{
+    max-width: 70vw;
+    margin: 0 auto;
+}
+.modal-container .flex-display, #sachduocmuanhieu .flex-display{
+    display: flex;
+}
+.top-navbar{
+    margin-top: 6.25em;
+}
+.banner img{
+    border:1px solid rgb(168, 167, 167) ;
+    width: 100%;
+    max-height: 100%;
+    animation: wipe-in-bottom-right 2s;
+}
+/*GIAO TIEP*/
+#giaotiepquantrong, #nghethuatgiaotiep {
+    margin-top: 50px;
+}
+#giaotiepquantrong h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+#loiichgiaotiep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#loiichgiaotiep img{
+    max-width: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+#loiichgiaotiep div{
+    display: grid;
+    grid-template-rows: 160px 50px auto;
+}
+#loiichgiaotiep h4{
+    font-size: 1.3em;
+}
+
+#nghethuatgiaotiep{
+    display: flex;
+}
+#nghethuatgiaotiephieuqua{
+    max-width: 40vw;
+}
+#review {
+    font-size: 1.0em;
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+   
+}
+#review p span{
+    font-size: 1.1em;
+}
+#review img{
+    width: 9.375em;
+}
+#xuyen{
+    background-color: #daffe9;
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#thang{
+    background-color: #dfb9b9;
+    padding: 20px;
+}
+#long{
+    background-color: #d4d4d4;
+    padding: 20px;
+}
+.button-41 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  font-size: 1.2em;
+}
+
+.button-41:hover {
+  background: #00bd68;
+}
+#sachduocnhieungchon{
+    max-width: 80vw;
+    margin-bottom: 2em;
+}
+#sachnhieungchon{
+    text-align: center;
+    font-size: 1.6em;
+}
+.book-items {
+    margin-top: 50px;
+}
+.book-items div{
+    line-height: 1em;
+    padding: 0px;
+}
+.book-items h4{
+    margin: 0.2em;
+    font-size: 15px;
+}
+.book-items h3{
+    font-size: .75em;
+    letter-spacing: .05em;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: .7;
+    margin: 0.2em;
+    width: 80%;
+}
+.book-items p{
+    margin: 0.2em;
+}
+.book-items a{
+    text-decoration: none;
+    color: #334862;
+    font-weight: lighter;
+}
+.book-items img{
+    width: 250px;
+    height: 300px;
+  }
+
+ /* SLICK */
+.slick-prev{
+    left:0%;
+}
+.slick-next{
+    right:0%;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+    transition: all 0.2 ease;
+    background-color: transparent;
+}
+.slick-next:hover, .slick-prev:hover{
+    color: #2cccff;
+}
+.slick-dots {
+	display: flex;
+	margin: 0;
+	padding: 1rem 0;
+	font-size: 0;
+    transform: translate(30%,0px);
+	list-style-type: none;
+}
+
+.slick-dots button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: orange;
+    text-indent: -9999px;
+    margin-right: 30px;
+}
+li.slick-active button {
+    background-color: red;
+}
+ 
+/* DANH GIA KHACH HANG*/
+.danhgiacuakhachhang{
+    background-color: rgb(255, 224, 118);
+    max-width: 100vw;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+.cacdanhgia img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.cacdanhgia{
+    display: flex;
+    max-width: 100%;
+}
+.cacdanhgia div{
+    margin-right: 1em;
+    font-style: italic;
+}
+.cacdanhgia .danhgia5stars{
+    width: 10em;
+    height: auto;
+    border-radius: 0;
+}
+.cacdanhgia div span{
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --h2-front-size: 1.4em;
+        --h3-front-size: 1.25em;
+        --p-front-size: 1em;
+        --red-pink-color: #e16464;
+      }
+    html,body{
+        overflow-x: hidden;
+    }
+    .mid-container{
+        max-width: 95vw;
+    }
+    .top-navbar{
+        margin-top: 0;
+    }
+    .banner img{
+        height: 60vw;
+    }
+    /*Content*/
+    #giaotiepquantrong, #nghethuatgiaotiep {
+        margin-top: 1em;
+    }
+    #giaotiepquantrong h2{
+        font-size: var(--h2-front-size);
+    }
+    #loiichgiaotiep {
+        flex-direction: column;
+    }
+    #loiichgiaotiep img{
+        max-width: 15em;
+    }
+    #loiichgiaotiep h4{
+        font-size: 1.1em;
+    }
+
+    #nghethuatgiaotiep{
+        display: flex;
+        flex-direction: column;
+    }
+    #nghethuatgiaotiephieuqua{
+        max-width: 100vw;
+    }
+    #review {
+        font-size: var(--p-front-size);
+        color: black;
+        height: auto;
+        grid-template-columns: auto auto;
+        overflow: hidden;
+        max-height: 100vh;
+    }
+    #review img{
+        width: 30vw;
+    }
+
+    #sachnhieungchon h2{
+        font-size: var(--h2-front-size);
+    }
+    .book-items {
+        margin-top: 0px;
+        margin-left: 2em ;
+    }
+    .book-items img{
+        max-width: 10em;
+        max-height: 15em;
+      }
+     /*SLICK DANH GIA*/
+     .slick-prev{
+        left:0%;
+    }
+    .slick-next{
+        right:0%;
+    }
+    .slick-arrow{
+        color: rgb(83, 83, 83);
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        border: none;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        line-height: 1;
+        transition: all 0.2 ease;
+        background-color: transparent;
+        opacity: 0.3;
+    }
+    .slick-next:hover, .slick-prev:hover{
+        color: #2cccff;
+    }
+    .slick-dots {
+        display: flex;
+        padding: 1rem 0;
+        font-size: 0;
+        transform: translate(40%,0px);
+        list-style-type: none;
+    }
+    
+    .slick-dots button {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: rgb(105, 219, 185);
+        text-indent: -9999px;
+        margin-right: 2em;
+    }
+    li.slick-active button {
+        background-color: red;
+    }
+
+    /*CAC DANH GIA*/
+    .cacdanhgia div{
+        margin-left: 1em;
+    }
+    .cacdanhgia img{
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}
+/*Tablet*/
+@media only screen and (min-width: 600px) and (max-width:899px){
+    .mid-container{
+        max-width: 95vw;
+    }
+    #navbar, .mobile-menu{
+        display: none;
+    }
+    .banner img{
+        max-width: 100%;
+    }
+    .top-navbar{
+        margin-top: 0;
+    }
+    .banner img{
+        height: 40vw;
+    }
+
+    /*Content*/
+    #giaotiepquantrong, #nghethuatgiaotiep {
+        margin-top: 1em;
+    }
+    #giaotiepquantrong h2{
+        font-size: var(--h2-front-size);
+    }
+    #loiichgiaotiep {
+        flex-direction: column;
+    }
+    #loiichgiaotiep img{
+        max-width: 15em;
+    }
+    #loiichgiaotiep h4{
+        font-size: 1.1em;
+    }
+
+    #nghethuatgiaotiep{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #nghethuatgiaotiephieuqua{
+        max-width: 100vw;
+    }
+    #review {
+        font-size: var(--p-front-size);
+        color: black;
+        height: auto;
+        grid-template-columns: auto auto;
+        overflow: hidden;
+        max-height: 100vh;
+    }
+    #review img{
+        width: 30vw;
+    }
+
+    #sachnhieungchon h2{
+        font-size: var(--h2-front-size);
+    }
+    .book-items {
+        margin-top: 0px;
+        margin-left: 3em ;
+        overflow: hidden;
+    }
+    .book-items img{
+        max-width: 10em;
+        max-height: 15em;
+      }
+    
+    /*SLICK DANH GIA*/
+    .slick-prev{
+        left:0%;
+    }
+    .slick-next{
+        right:0%;
+    }
+    .slick-arrow{
+        color: rgb(83, 83, 83);
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        border: none;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        line-height: 1;
+        transition: all 0.2 ease;
+        background-color: transparent;
+        opacity: 0.3;
+    }
+    .slick-next:hover, .slick-prev:hover{
+        color: #2cccff;
+    }
+    .slick-dots {
+        display: flex;
+        padding: 1rem 0;
+        font-size: 0;
+        transform: translate(45%,0px);
+        list-style-type: none;
+    }
+    
+    .slick-dots button {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: rgb(105, 219, 185);
+        text-indent: -9999px;
+        margin-right: 2em;
+    }
+    li.slick-active button {
+        background-color: red;
+    }
+    /*CAC DANH GIA*/
+    .cacdanhgia div{
+        margin-left: 1em;
+    }
+    .cacdanhgia img{
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}
+/*Tablet landscape up*/
+@media only screen and (min-width: 900px) and (max-width:1199px){
+    .mid-container{
+        max-width: 95vw;
+    }
+    #navbar, .mobile-menu{
+        display: none;
+    }
+    .banner img{
+        max-width: 100%;
+        height: 40vw;
+    }
+    .top-navbar{
+        margin-top: 0;
+    }
+    #nghethuatgiaotiephieuqua{
+        max-width: 50vw;
+    }
+}
+/*Desktop up*/
+@media only screen and (min-width: 1200px) {
+}
+/*Big desktop up*/  
+@media only screen and (min-width: 1800px) {
+}

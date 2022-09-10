@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+ 
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/Nghe-Thuat-Giao-Tiep-Hieu-Qua.jpg" alt="Nghe-Thuat-Giao-Tiep-Hieu-Qua" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/Nghe-Thuat-Giao-Tiep-Hieu-Qua 1.jpg" alt="Nghe-Thuat-Giao-Tiep-Hieu-Qua">
+                </div>
+                <div>
+                    <img src="../image/Nghe-Thuat-Giao-Tiep-Hieu-Qua 2.jpg" alt="Nghe-Thuat-Giao-Tiep-Hieu-Qua">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>Nghệ Thuật Giao Tiếp Hiệu Quả – Patrick King
+                </h2>
+                <p><del>$99,000.00 /del> 
+                <strong> $60,000.00</strong></p>
+                <p>Tác giả: Patrick King</p>
+                <p>Thể loại: Kỹ năng, Kỹ năng sống</p>
+                <p>Nhà xuất bản: NXB Thế Giới
+                </p>
+                <p>Định dạng: Epub</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p> Nghệ thuật giao tiếp hiệu quả là cuốn sách viết về cách kế bạn và cách làm chủ các tình huống trong xã hội.Tác giả Patrick King tập trung vào các chiến lược và kỹ thuật giúp bạn trở nên cuốn hút hơn, thể hiện được nhiều cảm xúc hơn trong giọng điệu và trao đổi thông tin tế nhị
+                hơn.</p>
+            <p> Cuốn sách giúp bạn mở lòng đủ để tạo nên một cuộc đối thoại ý nghĩa thay vì chỉ ngồi đợi điều bất ngờ xảy ra. Và hãy nhớ một điều, nếu mọi chiến lược không hiệu quả, chỉ cần giao tiếp như những đứa trẻ với nhau.</p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

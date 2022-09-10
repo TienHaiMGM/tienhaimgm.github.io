@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/Tren-Duong-Bang.jpg" alt="Tren-Duong-Bang" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/Tren-Duong-Bang 1.jpg" alt="Tren-Duong-Bang">
+                </div>
+                <div>
+                    <img src="../image/Tren-Duong-Bang 2.png" alt="Tren-Duong-Bang">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>Trên Đường Băng
+                </h2>
+                <p><del>$80,000.00 </del> 
+                <strong> $66,400.00</strong></p>
+                <p>Nhà cung cấp: NXB Trẻ
+                </p>
+                <p>Tác giả: Tony Buổi Sáng
+                </p>
+                <p>Nhà xuất bản: NXB Trẻ
+                </p>
+                <p>Hình thức bìa:Bìa Mềm</p>
+                <p>Số trang: 308
+                </p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Cuốn Trên Đường Băng được chia làm 3 phần: “Chuẩn bị hành trang”, “Trong phòng chờ sân bay” và “Lên máy bay”, tương ứng với những quá trình một bạn trẻ phải trải qua trước khi “cất cánh” trên đường băng cuộc đời, bay vào bầu trời cao rộng.
+            </p>
+            <p>Xuất phát từ cái tâm trong sáng của người đi trước dày dặn kinh nghiệm, kiến thức, Tony Buổi Sáng mang đến đọc giả những bài viết hài ước, tinh tế, sinh động và đầy thiết thực. Cuốn Trên Đường Băng với những bài viết về thái độ với sự học và kiến thức nói chung, cách ứng phó với những trắc trở thử thách khi đi làm, cách sống hào sảng nghĩa tình văn minh… truyền cảm hứng cho các bạn trẻ sống hết mình, trọn vẹn từng phút giây và sẵn sàng cho hành trang cuộc sống.
+            </p>
+            <p>Trên Đường Băng của Tony Buổi Sáng tuy hướng đến những đọc giả là những người trẻ nhưng những người lớn hơn vẫn để hiểu hơn, và có cách nhìn nhận cũng như giáo dục con em mình tốt nhất thay vì bảo vệ con quá kĩ trở nên yếu ớt và thiếu tự lập. Và để yêu thương “khoa học” nhất. Đây cũng là cuốn sách mà những người đi làm nên sở hữu để nhìn lại chặng đường mình đã đi qua, suy ngẫm và thay đổi vì chưa bao giờ là quá muộn.
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

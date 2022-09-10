@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/Doi-Ngan-Dung-Ngu-Dai.jpg" alt="Doi-Ngan-Dung-Ngu-Dai" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/Doi-Ngan-Dung-Ngu-Dai 1.jpg" alt="Doi-Ngan-Dung-Ngu-Dai">
+                </div>
+                <div>
+                    <img src="../image/Doi-Ngan-Dung-Ngu-Dai 2.jpg" alt="Doi-Ngan-Dung-Ngu-Dai">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>Đời Ngắn Đừng Ngủ Dài
+                </h2>
+                <p><del>$75,000.00 </del> 
+                <strong> $59,000.00</strong></p>
+                <p>Tác giả: Robin Sharma</p>
+                <p>Nhà xuất bản: NXB trẻ
+                </p>
+                <p>Dịch Giả: Phạm Anh Tuấn</p>
+                <p>Hình thức bìa:Bìa Mềm</p>
+                <p>Số trang: 228</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Cuốn sách này chính là món quà dành tặng cho các bạn trẻ đang mất phương hướng, lãng phí thời gian của mình vào những việc vô bổ, không có ích cho tương lai. Tựa đề như “một gáo nước lạnh” tạt thẳng vào chúng ta, hãy thức tỉnh và làm việc bởi vì cuộc đời này ngắn lắm đừng ngủ dài.
+            </p>
+            <p>Đời ngắn đừng ngủ dài là lời tâm sự của người đi trước, những kinh nghiệm được đúc kết từ trải nghiệm thực tế của Tác giả sẽ đem đến cho bạn đọc trải nghiệm vô cùng thú vị trên trang sách. Hãy cùng mình đi khám phá những nội dung mới mẻ của nó nhé!
+            </p>
+            <p>Cuốn sách bao gồm 101 chương, nội dung mỗi chương vô cùng ngắn gọn, Tác giả là một người có vốn sống phong phú nên tất cả những gì được nêu trong sách rất hay và dễ dàng thuyết phục người đọc.
+            </p>
+            <p>Bệnh lề mề, trì hoãn đã không còn là căn bệnh xa lạ gì với giới trẻ ngày nay. Nhiều bạn trẻ dành cả một ngày dài lướt web, xem phim, chơi game mà không hề trau dồi kỹ năng cho bản thân. Thử hỏi những giờ lướt web ấy sẽ giúp gì được cho tương lai của các bạn sau này. Khi mọi người đang không ngừng nghỉ cố gắng làm việc thì bạn nằm chơi trong lo sợ. Nếu cuộc sống chỉ là những ngày nằm lướt web, chơi điện thoại thì sẽ chẳng có ý nghĩa gì cả.
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

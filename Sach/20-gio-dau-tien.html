@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/20-gio.jpg" alt="20-gio" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/20-gio1.jpg" alt="20-gio">
+                </div>
+                <div>
+                    <img src="../image/20-gio2.jpg" alt="20-gio">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>20 Giờ Đầu Tiên</h2>
+                <p><del>69,000,000</del> 
+                <strong> $55,890.00</strong></p>
+                <p>Nhà cung cấp: Thái Hà</p>
+                <p>Tác giả: Josh Kaufman</p>
+                <p>Nhà xuất bản: NXB Lao Động Xã Hội
+                </p>
+                <p>Hình thức bìa:Bìa Mềm</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Trong cuốn sách này, chúng ta sẽ bắt đầu bằng những nguyên tắc học kỹ năng nhanh: làm cách nào để học những kỹ năng mới nhanh nhất có thể. Những ý tưởng và bài tập thực hành này không hề phức tạp, nên sẽ không mất quá nhiều thời gian để học.
+            </p>
+            <p>Sau đó, tôi sẽ giải thích cách sử dụng những nguyên tắc này trong thực tế bằng cách chỉ cho các bạn biết tôi đã học 6 kỹ năng mới dưới đây trong vòng chưa tới 20 tiếng mỗi kỹ năng, không quá 90 phút thực hành mỗi ngày, như thế nào.
+            </p>
+            <ul>
+                <li>Phát triển bài tập yoga cá nhân
+                </li>
+                <li>Viết chương trình máy tính dựa trên web
+                </li>
+                <li>Học lại cách gõ 10 ngón
+                </li>
+                <li>Khám phá boardgame cổ nhất và phức tạp nhất trong lịch sử
+                </li>
+                <li>Chơi được một nhạc cụ
+                </li>
+                <li>Lướt ván
+                </li>
+            </ul>
+            <p>Tôi hi vọng cuốn sách này có thể khuyến khích bạn phủi bụi danh sách những việc “muốn làm” của bạn, kiểm tra lại danh sách đó và cam kết học được điều mới mẻ nào đó.
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

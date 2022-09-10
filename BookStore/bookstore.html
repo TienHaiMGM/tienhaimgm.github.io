@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="bookstore.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+   <header class="header">
+    <nav id="navbar">
+        <a href="bookstore.html">
+            <img src="../image/logo-SinhVienTriThuc.png" id="logo" alt="logoSinhVienTriThuc">
+        </a>
+        <h1><a href="bookstore.html">TRANG CHỦ</a></h1>
+        <div class="dropdown">
+            <h1><a href="#">DANH MỤC SÁCH</a></h1>
+            <div class="dropdown-content">
+              <a href="../Danh_muc_sach/self-help.html">Sách Self-Help</a>
+              <a href="../Danh_muc_sach/thoigian.html">Sách quản lý thời gian</a>
+              <a href="../Danh_muc_sach/phuongphap.html">Sách phương pháp học tập thông minh</a>
+              <a href="../Danh_muc_sach/giaotiep.html">Sách kỹ năng giao tiếp</a>
+            </div>
+          </div>
+        <h1><a href="/Blog/Blog.html">BLOG</a></h1>
+        <div class="giohang"> 
+            <p>GIỎ HANG /</p>
+            <span id="tienGioHang">$0.00</span>
+            <button type="button" class="cartButton"><ion-icon name="bag-outline"></ion-icon>
+              <span id="soLuongGioHang">0</span>
+              </button>
+        </div>
+        <div class="modal-cart">
+            <div class="shoppingcart modal-product">
+              <div class="cacsanpham">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                SẢN PHẨM
+                            </th>
+                            <th>
+                                GIÁ
+                            </th>
+                            <th>
+                                SỐ LƯỢNG
+                            </th>
+                            <th>
+                                TẠM TÍNH
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tonggia">
+                <h4>
+                    CỘNG GIỎ HÀNG
+                </h4>
+                <div class="flex-style" id="tongTamTinh">
+                    <p>Tạm tính</p>
+                    <strong>$0.00</strong>
+                </div>
+                <div class="flex-style">
+                    <p>Giao hàng	
+                    </p>
+                    <span>Giao hàng miễn phí</span>
+                </div>
+                <div class="flex-style" id="tongTien">
+                    <p>Tổng</p>
+                    <strong>$0.00</strong>
+                </div>
+                <button class="clear-style"><a href="">TIẾN HÀNH THANH TOÁN</a></button>
+            </div>
+            </div>
+        </div>
+        <div class="mobile-nav-button">
+            <button type="button"><ion-icon name="menu-outline"></ion-icon></button>
+        </div>
+    </nav>
+    <nav class="mobile-menu">
+        <div>
+            <ul>
+                <li><a href="bookstore.html">Trang chủ</a></li>
+                <li>
+                <div class="dropdown">
+                    <a href="#">Danh mục sách</a>
+                    <div class="dropdown-content">
+                      <a href="../Danh_muc_sach/self-help.html">Sách Self-Help</a>
+                      <a href="../Danh_muc_sach/thoigian.html">Sách quản lý thời gian</a>
+                      <a href="../Danh_muc_sach/phuongphap.html">Sách phương pháp học tập thông minh</a>
+                      <a href="../Danh_muc_sach/giaotiep.html">Sách kỹ năng giao tiếp</a>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="../Blog/Blog.html">Blog</a></li>
+                <li><a href="../Shop/shop.html">Shop</a></li>									
+              </ul>
+        </div>
+        <div class="mobile-button-close">
+            <button type="button"><ion-icon name="close-outline"></ion-icon></button>
+        </div>
+      </nav>
+      <nav class="tablet-menu">
+        <a href="bookstore.html" id="logo-a">
+            <img src="../image/logo-SinhVienTriThuc.png" id="logo" alt="logoSinhVienTriThuc">
+        </a>
+        <h1><a href="bookstore.html">TRANG CHỦ</a></h1>
+        <div class="dropdown">
+            <h1><a href="#">DANH MỤC SÁCH</a></h1>
+            <div class="dropdown-content">
+              <a href="../Danh_muc_sach/self-help.html">Sách Self-Help</a>
+              <a href="../Danh_muc_sach/thoigian.html">Sách quản lý thời gian</a>
+              <a href="../Danh_muc_sach/phuongphap.html">Sách phương pháp học tập thông minh</a>
+              <a href="../Danh_muc_sach/giaotiep.html">Sách kỹ năng giao tiếp</a>
+            </div>
+          </div>
+        <h1><a href="/Blog/Blog.html">BLOG</a></h1>
+        <h1><a href="../Shop/shop.html">SHOP</a></h1>
+      </nav>
+    <div class="banner top-navbar">
+        <img src="../image/banner-trang-chu-2.jpg" alt="banner_trang_chu" >
+    </div>
+   </header>
+   <main class="content">
+    <section class="mid-container" id="gioithieu">
+        <div id="contentgioithieu"> 
+            <h2>Phát triển bản thân là gì?</h1>
+            <p>Phát triển bản thân là hoạt động nhằm nâng cao kiến thức và hình ảnh bản thân, phát triển tài năng và khả năng, tích lũy tài sản và sự nghiệp, nâng cao chất lượng cuộc sống và làm sáng tỏ những ước mơ và hoài bão.
+            </p>
+            <p>Khái niệm này không chỉ dừng lại ở phát triển bản thân mà nó còn bao gồm các hoạt động chính thức và không chính thức để phát triển người khác trong những vai trò như thầy giáo, sinh viên, hướng dẫn viên, tư vấn viên, quản lý, huấn luyện viên.
+            </p>
+            <p>Nói cho cung, phát triển bản thân diễn ra trong bối cảnh thể chế, nó liên quan tới phương pháp, chương trình, công cụ, kỹ thuật và hệ thống đánh giá nhằm hỗ trợ con người phát triển ở mức độ cá nhân trong các tổ chức.
+            </p>
+        </div>
+        <div id="anhmota">
+            <img src="../image/PhatTrienBanThan.jpg" id="anhgioithieu" alt="PhatTrienBanThan">
+        </div>
+    </section>
+    <section class="mid-container" id="hotro">
+        <h2>CHÚNG TÔI SẼ HỖ TRỢ BẠN TRONG VIỆC</h1>
+        <div>
+            <div class="cachotro">
+                <img src="../image/tu-duy.png" alt="tuduy">
+                <p><a href="../Danh_muc_sach/self-help.html">Nâng cao khả năng tu duy</a></p>
+            </div>
+            <div class="cachotro">
+                <img src="../image/thoi-gian.png" alt="thoigian">
+                <p><a href="../Danh_muc_sach/thoigian.html">Quản lý thời gian một cách hiệu quả</a></p>
+            </div>
+            <div class="cachotro">
+                <img src="../image/phuong-phap.png" alt="phuongphap">
+                <p><a href="../Danh_muc_sach/phuongphap.html">Có phương pháp học tập thông minh</a></p>
+            </div>
+            <div class="cachotro">
+                <img src="../image/giao-tiep.png" alt="giaotiep">
+                <p><a href="../Danh_muc_sach/giaotiep.html">Kỹ năng giao tiếp hiệu quả</a></p>
+            </div>
+        </div>
+    </section>
+    <article id="shopnow">
+        <h2>BẠN CÓ MUỐN CÙNG SINH VIEN TRI THUC PHÁT TRIỂN?</h2>
+        <h2>KHÔNG CHỈ VỀ NGẮN HẠN MÀ CÒN DÀI HẠN?</h2>
+        <p>Tham khảo ngay những cuốn sách của chúng tôi</p>
+        <a href="../Shop/shop.html" target="_blank"><button>SHOP NOW</button></a>
+    </article>
+    <section class="mid-container" id="dacdiem">
+        <div id="cauhoi">
+            <h2>TẠI SAO BẠN NÊN CHỌN SinhVienTriThuc</h2>
+            <img src="../image/target.jpg" alt="target">
+        </div>
+        <div id="traloi">
+        <h3>Sự hài lòng của khách hàng là ưu tiên số 1</h3>
+        <p>SinhVienTriThucluôn coi “sự hài lòng của khách hàng” là mục tiêu phấn đấu của công ty chúng tôi. Đó là vì sao chúng tôi luôn coi trọng sự kết nối và mối quan hệ bền vững với khách hàng.
+        </p>
+        <h3>Hàng hóa chính hãng
+        </h3>
+        <p>Khẳng định tất cả hàng hóa được bán bởi SinhVienTriThuc luôn luôn là hàng hóa chính hãng, xuất xứ rõ ràng… Chữ Tín là phương châm của SinhVienTriThuc.
+        </p>
+        <h3>Bảo hành uy tín
+        </h3>
+        <p>Tất cả sản phẩm và dịch vụ của chúng tôi đều được bảo hành theo một quy trình chuẩn và nghiêm ngặt. Dù bạn mua hàng đã hết bảo hành vẫn được hỗ trợ một cách tốt nhất. 
+        </p>
+        <h3>Sự tin tưởng
+        </h3>
+        <p>Thành công của chúng tôi là đạt được sự tin tưởng của khách hàng cũng như mối quan hệ bền chặt với khách hàng. Chúng tôi mong muốn khách hàng như những người bạn thâm giao bền vững của chúng tôi.
+        </p>
+        <h3>Hỗ trợ trợ nhiệt tình
+        </h3>
+        <p>Đội ngũ kỹ thuật viên của chúng tôi luôn thường trực 24/7 để hỗ trợ bạn khắc phục các sự cố xảy ra và đưa nó trở lại hoạt động bình thường trong thời gian ngắn nhất có thể.
+        </p>
+        <h3>Giá cả hợp lý
+        </h3>
+        <p>Công Nghệ Mã Vạch cam kết mang lại cho bạn dịch vụ chất lượng nhất với giá cả phải chăng, tối ưu cho tất cả các nhu cầu sử dụng. Bạn sẽ thực sự cảm thấy hài lòng với khoản chi phí mà mình đã bỏ ra.
+        </p>
+        </div>
+    </section>
+    <section class="danhgiacuakhachhang">
+        <h2>Những Đánh Giá Của Khách Hàng
+        </h2>
+        <div class="cacdanhgia mid-container">
+            <div id ="review-1">
+                <img src="../image/TranNam.jpg" alt="TranNam">
+                <p>Dịch vụ của SinhVienTriThuc rất tốt, tôi rất hài lòng khi mua hàng tại website, đây là điểm mua yêu thích của tôi.
+                </p>
+                <img src="../image/5stars.png" alt="5 stars" class="danhgia5stars"></img>
+                <p><span>Trần Nam</span></p>
+            </div>
+            <div id="review-2">
+                <img src="../image/Doan-Truong-Son.jpg" alt="Doan-Truong-Son">
+                <p>Nhờ những cuốn sách mua tại web mà tôi đã tiến bộ rất nhiều và trở thành một sinh viên ưu tú, có một tương lai tốt hơn.
+                </p>
+                <img src="../image/5stars.png" alt="5 stars" class="danhgia5stars">
+                <p><span>Đoàn Trường Sơn</span></p>
+            </div>
+            <div id="review-3">
+                <img src="../image/AnKhang.jpg" alt="AnKhang">
+                <p>Nhờ những cuốn sách tại website SinhVienTriThuc mà tôi đã cải thiện thành tích học tập và lối suy nghĩ của mình.
+                </p>
+                <img src="../image/5stars.png" alt="5 stars" class="danhgia5stars"></img>
+                <p><span>An Khang</span></p>
+            </div>
+        </div>
+    </section>
+   </main>
+   <article id="thongtinchitiet" class="mid-container">
+        <section id="dichvu">
+            <h3>DỊCH VỤ</h3>
+            <p><a href="../Dich_vu/thongtin.html">Thông tin về chúng tôi</a></p>
+            <p><a href="../Dich_vu/csbaomat.html">Chính xách bảo mật</a></p>
+            <p><a href="../Dich_vu/cshoantien.html">Chính sách đổi / trả / hoàn tiền</a></p>
+            <p><a href="../Dich_vu/dksudung.html">Điều khoản sử dụng</a></p>
+        </section>
+        <section id="thanhtoan">
+            <h3>CHẤP NHẬN THANH TOÁN</h3>
+            <img src="../image/thanhtoan.png" alt="thanhtoan">
+        </section>
+        <section id="vanchuyen">
+            <h3>ĐƠN VỊ VẬN CHUYỂN</h3>
+            <img src="../image/giaohang.png" alt="giaohang">
+        </section>
+    </article>
+    <footer id="footer">
+        <p>SinhVienTriThuc cung cấp nhiều loại sách như: Sách đang thịnh hành, Sách phát triển bản thân, Sách tâm lý học, Sách mới, Sách dành cho dân IT, Sách về người nổi tiếng...</p>
+        <p>Các bạn có thể liên hệ qua HotLine: 1900100 để được tư vấn miễn phí.</p>
+        <p>Copyright 2022 © SinhVienTriThuc</p>
+   </footer>
+
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../header_footer/modalcart.js" defer></script>
+    <script src="bookstore.js" defer></script>
+</body>
+</html>

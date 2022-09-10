@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/Kiem-Soat-Thoi-Gian-Chu-Toan-Moi-Viec.jpg" alt="Kiem-Soat-Thoi-Gian-Chu-Toan-Moi-Viec" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/Kiem-Soat-Thoi-Gian-Chu-Toan-Moi-Viec 1.jpg" alt="Kiem-Soat-Thoi-Gian-Chu-Toan-Moi-Viec">
+                </div>
+                <div>
+                    <img src="../image/Kiem-Soat-Thoi-Gian-Chu-Toan-Moi-Viec 2.jpg" alt="Kiem-Soat-Thoi-Gian-Chu-Toan-Moi-Viec">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>Kiểm Soát Thời Gian – Chu Toàn Mọi Việc
+                </h2>
+                <p><del>$99,000.00 </del> 
+                <strong> $69,000.00</strong></p>
+                <p>Tác giả: Leander Kahney</p>
+                <p>Thể Loại : Tâm Lý – Kỹ Năng Sống
+                </p>
+                <p>Hình thức bìa:Bìa Mềm</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Ngày nay, trong nhịp sống gấp gáp của thời đại công nghiệp, thời gian dường như đã trở thành một thứ vô giá.
+            </p>
+            <p>Tuy nhiên, không phải ai cũng biết cách quản lý thời gian của mình một cách hiệu quả nhất, thậm chí có rất nhiều người đã vướng phải thứ mà các chuyên gia tâm lý vẫn gọi là “Cạm bẫy thời gian”. Nó khiến con người cảm giác như thời gian của họ bị tắc lại trong dòng chảy vô tận của công việc và trách nhiệm, và cuộc sống trở nên khó khăn và mất kiểm soát hơn cho dù họ đã cố gắng hết sức.
+            </p>
+            <p>Trải qua hơn một thập kỷ nghiên cứu tường tận với sự tham gia của nhiều doanh nhân trên khắp thế giới, Alec Mckenzie và Patricia Nickerson đã cùng nhau cho ra đời siêu phẩm “The Time Trap” – “Nghệ thuật quản lý thời gian” cuốn cẩm nang kỳ diệu tiết lộ những cách thức tối ưu giúp bạn kiểm soát thời gian một cách hiệu quả nhất.
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

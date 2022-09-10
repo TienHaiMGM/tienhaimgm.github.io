@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/Giai-Ma-Sieu-Tri-Nho.jpg" alt="Giai-Ma-Sieu-Tri-Nho" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/Giai-Ma-Sieu-Tri-Nho 1.jpg" alt="Giai-Ma-Sieu-Tri-Nho">
+                </div>
+                <div>
+                    <img src="../image/Giai-Ma-Sieu-Tri-Nho 2.jpg" alt="Giai-Ma-Sieu-Tri-Nho">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>Giải Mã Siêu Trí Nhớ
+                </h2>
+                <p><del>$160,000.00 </del> 
+                <strong> $139,000.00</strong></p>
+                <p>Nhà cung cấp: MAI THỊ TƯỜNG VÂN</p>
+                <p>Tác giả: Mai Tường Vân</p>
+                <p>Nhà xuất bản: NXB Đà Nẵng
+                </p>
+                <p>Hình thức bìa:Bìa Mềm</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Giải mã siêu trí nhớ là cuốn cẩm nang với những bí quyết ghi nhớ được chia sẻ bởi một người Việt dành cho người Việt. Những câu chuyện, hình ảnh minh họa trong sách vô cùng gần gũi và thực tế, được diễn giải bằng văn phong của người Việt, sẽ giúp người đọc dễ dàng áp dụng và luyện tập ngay tức khắc.
+            </p>
+            <p>Bất kể bạn là ai, chỉ cần kiên trì tập luyện đúng phương pháp, bạn đều có thể sở hữu khả năng ghi nhớ phi thường. Đó là những gì mà Mai Tường Vân khao khát chia sẻ trong cuốn sách đầu tay này. “Tôi từng “giá như” rất nhiều lần khi không biết đến các phương pháp này sớm hơn. Vì vậy, thông qua cuốn sách Giải mã siêu trí nhớ, tôi mong muốn rút ngắn thời gian “giá như” cho mọi người, giúp mọi người nhận ra trí nhớ của mình kỳ diệu nhiều hơn thế”, Tường Vân tâm sự.
+            </p>
+            <p>Tham gia chương trình Siêu trí tuệ Việt Nam 2019, trong vòng 2 tiếng đồng hồ, Tường Vân ghi nhớ đến 2.200 con số bao gồm mã vạch kiện hàng và số điện thoại được xếp lẫn lộn nhau. Với phần thi giải mã QR, Tường Vân phải ghi nhớ 100 mảnh QR đã bị chẻ đôi và 100 gương mặt đang giữ những mảnh ghép đó. Tất cả đều không làm khó được cô gái này. Các phương pháp ghi nhớ được học tập và rèn luyện từ trước được Tường Vân áp dụng thuần thục trong cuộc thi giúp cô tiến thẳng vào vòng cuối với màn thử sức cùng bậc thầy siêu trí tuệ người Đức – Johannes Mallow.
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

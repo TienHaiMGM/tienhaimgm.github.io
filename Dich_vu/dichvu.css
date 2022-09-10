@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color:#777;
+    font-size: 16px;
+}
+h2{
+    font-size: 1.3em;
+}
+.mid-container{
+    max-width: 70vw;
+    margin: 0 auto;
+}
+.top-navbar{
+    margin-top: 6.25em;
+}
+/*THONG TIN VE CHUNG TOI*/
+#gioithieuthongtin {
+    display: flex;
+}
+#gioithieuthongtin h1{
+    text-align: center;
+    font-size: 2em;
+}
+#gioithieuthongtin>div{
+    margin-right: 50px;
+}
+
+#loiichmuasam{
+margin-top: 5.3em;
+line-height: 2.0em;
+}
+#anhtintuong{
+    width:95%;
+    height: 61%;
+}
+
+#cacloaisach ol li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: dodgerblue;
+}
+
+/*CHINH SACH BAO MAT*/
+#anhchinhsachbaomat{
+    max-width: 100%;
+}
+#trachnhiemkhachang span{
+    display: block;
+}
+/*DIEU KHOAN SU DUNG*/
+#dieukhoansudung img{
+    width: 50%;
+}
+
+/*CHINH SACH HOAN TIEN*/
+#hoantra img{
+    width: 30%;
+    margin-left: 15em;
+}
+#hoantra table, #hoantra tr, #hoantra th, #hoantra td{
+    border: 2px solid black;
+}
+
+#hoantra table td{
+    padding: 10px;
+}
+#hoantra table th{
+    font-size: 1.1em;
+}
+
+
+/*Phone Only*/
+@media only screen and (max-width: 600px) {
+    :root {
+        --h2-front-size: 1.2em;
+        --p-front-size: 1em;
+        --red-pink-color: #e16464;
+      }
+    html,body{
+        overflow-x: hidden;
+    }
+    .mid-container {
+        max-width: 95vw;
+    }
+    .top-navbar{
+        margin-top: 0px;
+    }
+
+    /*THONG TIN VE CHUNG TOI*/
+    #gioithieuthongtin{
+        display: block;
+    }
+    #gioithieuthongtin>div{
+        margin-right: 0px;
+    }
+    #loiichmuasam{
+        margin-top: 0px;
+        line-height: 2.0em;
+    }
+    #anhtintuong{
+        width: 100%;
+    }
+
+    /*HOAN TRA*/
+    #hoantra img{
+        width: 100%;
+        height: 50vh;
+        margin-left: 0;
+    }
+    /*DIEU KHOAN SU DUNG*/
+    #dieukhoansudung img{
+        width: 100%;
+    }
+}
+/*Tablet portrait up*/
+@media only screen and (min-width: 600px) and (max-width:899px){
+    :root {
+        --h2-front-size: 1.2em;
+        --p-front-size: 1em;
+        --red-pink-color: #e16464;
+      }
+    html,body{
+        overflow-x: hidden;
+    }
+    .mid-container {
+        max-width: 95vw;
+    }
+    .top-navbar{
+        margin-top: 0px;
+    }
+
+    /*THONG TIN VE CHUNG TOI*/
+    #gioithieuthongtin{
+        display: block;
+    }
+    #gioithieuthongtin>div{
+        margin-right: 0px;
+    }
+    #loiichmuasam{
+        margin-top: 0px;
+        line-height: 2.0em;
+    }
+    #anhtintuong{
+        width: 100%;
+    }
+
+    /*HOAN TRA*/
+    #hoantra img{
+        width: 100%;
+        height: 50vh;
+        margin-left: 0;
+    }
+    /*DIEU KHOAN SU DUNG*/
+    #dieukhoansudung img{
+        width: 100%;
+    }
+}
+/*Tablet landscape up*/
+@media only screen and (min-width: 900px) and (max-width: 1199px){
+    .mid-container {
+        max-width: 95vw;
+    }
+    .top-navbar{
+        margin-top: 0px;
+    }
+}
+/*Desktop up*/
+@media only screen and (min-width: 1200px) {
+}
+/*Big desktop up*/  
+@media only screen and (min-width: 1800px) {
+}

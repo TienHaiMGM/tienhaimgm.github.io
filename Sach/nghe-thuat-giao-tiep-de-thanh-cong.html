@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/Nghe-thuat-giao-tiep-de-thanh-cong.png" alt="Nghe-thuat-giao-tiep-de-thanh-cong" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/Nghe-thuat-giao-tiep-de-thanh-cong 1.jpg" alt="Nghe-thuat-giao-tiep-de-thanh-cong">
+                </div>
+                <div>
+                    <img src="../image/Nghe-thuat-giao-tiep-de-thanh-cong 2.jpg" alt="Nghe-thuat-giao-tiep-de-thanh-cong">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>Nghệ Thuật Giao Tiếp Để Thành Công
+                </h2>
+                <p><del>$85,000.00 </del> 
+                <strong> $60,000.00</strong></p>
+                <p>Tác giả: Leil Lowndes
+                </p>
+                <p>Thể loại: Kỹ năng, Kỹ năng làm việc
+                </p>
+                <p>Nhà xuất bản: NXB Lao Động Xã Hội
+                </p>
+                <p>Định dạng: Epub</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Bạn có bao giờ ngưỡng mộ những người thành đạt, những người dường như “có tất cả” chưa? Bạn thấy họ thật tự tin trong các cuộc gặp gỡ làm ăn hay luôn là người dẫn dắt không khí các bữa tiệc. Họ là người có công việc tốt nhất, có người bạn đời tuyệt vời nhất, có nhiều bạn bè tốt…có tài khoản thật lớn trong ngân hàng. Vì sao họ đạt được những điều đó? Phải chăng họ có đôi tay của vua Midas chạm vào bất cứ đâu mọi thứ đều biến thành vàng? Hay họ được ban tặng nhiều hơn?
+            </p>
+            <p>Không phải vậy. Nhiều người trong số họ không hề thông minh hơn, thậm chí cũng chẳng ưa nhìn hơn bạn! Đạt được kết quả đáng mơ ước đó là do những người thành đạt thường có kỹ năng giao tiếp, ứng xử khéo léo hơn người khác. Ai trong chúng ta cũng tiềm ẩn kỹ năng này, người có nhiều, người có ít, người nào có nhiều thì gặt hái thành công trong cuộc sống.
+            </p>
+            <p>Trong cuốn sách này, với 92 thủ thuật đơn giản mà hiệu quả, Leil Lowndes sẽ giúp bạn khám phá và rèn luyện các kỹ năng để: Tạo một khởi đầu ấn tượng và gặp được những người bạn muốn Hòa nhập linh hoạt vào bất cứ nhóm nào, dù giữa bạn và họ ít tương đồng đến đâu Sử dụng ngôn ngữ cơ thể để lôi cuốn người nghe Trở thành nhân vật trung tâm tại mọi bữa tiệc Luôn tự tin, đáng tin cậy và gây ảnh hưởng ở mọi nơi.
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <main class="mid-container top-navbar">
+        <hr>
+        <section class="flex-display">
+            <div class="image-items">
+                <div>
+                   <img src="../image/18-Phut.jpg" alt="18phut" id="imgSanPham">
+                </div>
+                <div>
+                    <img src="../image/18-Phut1.jpg" alt="18phut">
+                </div>
+                <div>
+                    <img src="../image/18-Phut2.jpg" alt="18phut">
+                </div>
+            </div>
+            <div class="chitietsanpham">
+                <h2>18 Phút</h2>
+                <p><del>$95,000.00</del> 
+                <strong>$74,000.00</strong></p>
+                <p>Nhà cung cấp: Cty TGM</p>
+                <p>Tác giả: Peter Bregman</p>
+                <p>Nhà xuất bản: Phụ Nữ</p>
+                <p>Hình thức bìa: Bìa Mềm</p>
+                <div class="btnsanpham">
+                    <div class="addAndRemove">
+                        <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                        <input type="number" class="quantity" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric">
+                        <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                    </div>        
+                    <button type="button" class="themvaogiohang">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+            </div>
+        </section>
+        <section class="motasanpham">
+            <h3>MÔ TẢ</h3>
+            <p>Khi Molly đến văn phòng vào ngày đầu tiên để tiếp nhận công việc trưởng phòng nghiên cứu và phát triển của một ngân hàng đầu tư có quy mô vừa, cô mở máy vi tính lên, đăng nhập bằng mật khẩu công ty, mở hộp thư điện tử, và… há hốc mồm vì kinh ngạc.
+            </p>
+            <p>Cô vừa nhận việc chưa đến một phút mà hộp thư của cô đã có đến 385 thư cần đọc. Phải mất nhiêu ngày cô mới có thể xem xong những thông tin này. Khi đó ắt hẳn cô sẽ có thêm hàng trăm thư mới nữa.
+            </p>
+            <p>Hãy nghĩ về cuộc chiến mỗi ngày của bạn với hàng đống trách nhiệm và nghĩa vụ. Đã bao giờ bạn cảm thấy kiệt sức khi mặt trời vừa tắt nắng và nhận ra mình chưa làm việc gì xong cả?
+            </p>
+            <p>18 PHÚT: Xác định mục tiêu, làm chủ sự phân tâm và gặt hái thành quả
+            </p>
+            <p>Dựa trên những bài viết nổi tiếng của chính tác giả cho tạp chí Harvard Business Review, quyển sách 18 PHÚT nhẹ nhàng cho độc giả thấy cách vượt qua sự phân tâm thường nhật để tập trung vào những mục tiêu chủ chốt và ưu tiên hàng đầu trong cuộc sống.            
+            </p>
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>

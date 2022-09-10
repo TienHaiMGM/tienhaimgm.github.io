@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../header_footer/header_footer.css">
+    <link rel="stylesheet" href="sach.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <!--HEADER-->
+    <iframe src="../header_footer/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    
+    <main class="mid-container shoppingcart top-navbar">
+        <div class="cacsanpham">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            SẢN PHẨM
+                        </th>
+                        <th>
+                            GIÁ
+                        </th>
+                        <th>
+                            SỐ LƯỢNG
+                        </th>
+                        <th>
+                            TẠM TÍNH
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sanpham">
+                            <button type="button" class="removeButton"><ion-icon name="close-circle-outline"></ion-icon></button>
+                            <img src="../image/20-gio.jpg" alt="20-gio-dau-tien">
+                            <p>20 Giờ Đầu Tiên</p> 
+                        </td>
+                        <td>
+                            <strong>$55,890.00</strong>
+                        </td>
+                        <td>
+                            <div class="btnsanpham">
+                                <div class="addAndRemove">
+                                    <button type="button" id="subButton"><ion-icon name="remove-outline"></ion-icon></button>
+                                    <input type="number" class="quantity" value="1">
+                                    <button type="button" id="addButton"><ion-icon name="add-outline"></ion-icon></button>
+                                </div>        
+                            </div>
+                        </td>
+                        <td>
+                            <strong>$111,780.00</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tonggia">
+            <h4>
+                CỘNG GIỎ HÀNG
+            </h4>
+            <div class="flex-style">
+                <p>Tạm tính</p>
+                <span><strong>$239,620.00</strong></spam>
+            </div>
+            <div class="flex-style">
+                <p>Giao hàng	
+                </p>
+                <span>Giao hàng miễn phí</span>
+            </div>
+            <div class="flex-style">
+                <p>Tổng</p>
+                <span><strong>$239,620.00</strong></span>
+            </div>
+            <button class="clear-style"><a href="">TIẾN HÀNH THANH TOÁN</a></button>
+        </div>
+    </main>
+
+
+    <!--FOOTER-->
+    <iframe src="../header_footer/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+  ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="sach.js" defer></script>
+    <script src="../header_footer/cart.js" defer></script>
+    <script src="../header_footer/navbar-mobile.js" defer></script>
+</body>
+</html>
