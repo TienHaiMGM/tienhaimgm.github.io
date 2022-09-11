@@ -6,7 +6,6 @@ const body = document.getElementsByTagName("body");
 
 for(let i = 0; i< btn_cart.length; i++){
   btn_cart[i].addEventListener("click", ()=>{
-    console.log("hai")
   modal_cart[0].classList.add("show-cart"); 
   body[0].classList.add("hidden-scroll");
   });

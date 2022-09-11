@@ -262,7 +262,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .modal-cart .modal-product{
         max-width: 100vw;
-        max-height: 70vh;
+        max-height: 60vh;
         background-color: white;
         position: relative;
         top:4em;
@@ -361,7 +361,6 @@ input[type=number]::-webkit-outer-spin-button {
     .slick-dots {
         transform: translate(30%,0px);
     }
-     /*MODAL CART*/
      .shop-tablet{
         display: none;
     }
@@ -371,6 +370,101 @@ input[type=number]::-webkit-outer-spin-button {
     .modal-cart .modal-product{
         left:5vw;
         max-width: 90vw;
+    }
+    /*MODAL CART*/
+    .modal-cart{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(218, 216, 216, 0.5);
+        max-width: 100vw;
+        max-height: 100vh;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 35;
+    }
+    .modal-cart .modal-product{
+        max-width: 100vw;
+        max-height: 60vh;
+        background-color: white;
+        position: relative;
+        top:4em;
+        left:0;
+        padding: 5px;
+    }
+    .show-cart{
+        opacity: 1;
+        pointer-events:initial;
+        z-index: 40;
+    }
+    .hidden-scroll{
+        overflow: hidden;
+    }
+    /* SHOPPING CART*/
+    .shoppingcart{
+        display: block;
+        max-width: 100vw;
+    }
+    .cacsanpham {
+        padding-right: 0px;
+        padding-top: 2em;
+        margin-right: 0;
+        max-width: 100%;
+        border-right: none;   
+        
+    }
+    .cacsanpham .sanpham{
+        
+        gap: 0px;
+    }
+    .cacsanpham table {
+        width: 100%;
+    }
+    .cacsanpham table thead th{
+        text-align: left;
+        border-bottom: 3px solid #ececec;
+        line-height: 1.3;
+        font-size: .5em;
+        padding-right: 0px;
+    }
+    .cacsanpham table tr td{
+        padding: 0em;
+        text-align: left;
+        border-bottom: 1px solid #ececec;
+        line-height: 1.3;
+        font-size: .4em;
+    }
+    .tonggia{
+        margin-top: 10vh;
+    }
+    .tonggia div.flex-style{
+        gap: 0px
+    }
+    .tonggia button{
+        margin-top: 5px;
+        margin-right: 0em;
+    }
+
+    .addAndRemoveCart{
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .addAndRemoveCart{
+        margin-right: 0px;
+    }
+    .addAndRemoveCart input{
+        width: 2em;
+        height: 2em;
+        background-color: white;
+        border: 1px solid rgb(170, 170, 170);
+        text-align: center;
+    }
+    .addAndRemoveCart button{
+        width: 2em;
+        height: 2em;
     }
 }
 /*Tablet landscape up*/
@@ -392,7 +486,6 @@ input[type=number]::-webkit-outer-spin-button {
     .slick-dots {
         transform: translate(30%,0px);
     }
-    /*MODAL CART*/
     .shop-tablet{
         display: none;
     }
@@ -403,6 +496,34 @@ input[type=number]::-webkit-outer-spin-button {
         left:10vw;
         max-width: 80vw;
     }
+
+     /*MODAL CART*/
+    .modal-cart .modal-product{
+        position: relative;
+        top:15vh;
+        left:2vw;
+        max-width: 95vw;
+        width: 100%;
+        max-height: 50vh;
+        height: 100%;
+        background-color: white;
+        padding: 2em;
+    }
+    .show-cart{
+        opacity: 1;
+        pointer-events:initial;
+        z-index: 40;
+    }
+    .hidden-scroll{
+        overflow: hidden;
+    }
+    /* SHOPPING CART*/
+    .cacsanpham {
+        padding-right: 0px;
+        margin-right: 10px;
+        min-width: 60vw;
+    }
+
     
 }
 /*Desktop up*/
